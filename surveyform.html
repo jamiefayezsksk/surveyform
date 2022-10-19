@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> User Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="heading">
+    <h1 id="title">Let us know!</h1>
+    <p id="description">We love to know something 'bout you!</p>
+    </div>
+    <form id="survey-form">
+      <div id="input-fields">
+      <label id="name-label"><b>Username</b></    
+      label><br>
+      <input id="name" type="text" name="name" class="form" required  placeholder="Enter your username"><br>
+      <label id="email-label"><b>Email</b></
+      label><br>
+      <input  id="email" name="email" class="form" type="email" required placeholder="Enter valid email" /><br>
+      <label id="number-label"><b>User Number</b></
+      label><br>
+      <input id="number" min="5" max="99" name="number" type="number" class="form" placeholder="Enter valid number">
+</div>
+
+<div id="dropdown-div"><br>
+<label id="dropdown-label"><strong>Continent: </strong></label><br>
+  <select id="dropdown" name="code-lang" class="form">
+    <option value="a">Asia </option>             
+    <option value="sa">South America</option>         
+    <option value="na">North America</option>            
+    <option value="e">Europe</option>            
+    <option value="a">Antartica</option>            
+    <option value="af">Africa</option>            
+    <option value="o">Ocenia</option>
+  </select>
+</div>
+
+<div id="button-area">
+<br>
+<label id="select-label"><b>Age group</b></label><br>
+    <input type="radio" class="radio-inline" name="age" value="teens" >under 13<br>
+    <input type="radio" class="radio-inline" name="age" value="minor" >14-17<br>
+    <input type="radio" class="radio-inline" name="age" value="young adult" >18-24<br>
+    <input type="radio" class="radio-inline" name="age" value="adult" >24-34<br>
+    <input type="radio" class="radio-inline" name="age" value="others" >others:
+    <input id="number" min="5" max="99" placeholder="please specify">
+</div>
+
+<div id="button-area"><br>
+<label id="fan-label"><b>How did you become a fan of SEVENTEEN? (Select all that apply)</b></label><br><br>
+    <input type="checkbox" value="v" >Visual(looks) <br>
+    <input type="checkbox" value="p" >Physical characteristics <br>
+    <input type="checkbox" value="q" >Quality of music <br>
+    <input type="checkbox" value="v" >Vocal skills <br>
+    <input type="checkbox" value="r" >Rap skills <br>
+    <input type="checkbox" value="d" >Dance skills <br>
+    <input type="checkbox" value="p" >Performance presence <br>
+    <input type="checkbox" value="m" >Music writing/producing skills <br>
+    <input type="checkbox" value="m" >Message conveyed through their music <br>
+    <input type="checkbox" value="p" >Personality character <br>
+    <input type="checkbox" value="r" >Relationship among members <br>
+    <input type="checkbox" value="c" >Communication with fans <br>
+    <input type="checkbox" value="o" >Overall personality <br>
+    <input type="checkbox" value="s" >Style <br>
+    <input type="checkbox" value="t" >Talent individuality <br>
+  <div id="ending"><br><br>
+  <label id="comments-label">
+
+Do you have any suggestion about this survey?</label><br>
+<textarea style= height:120px; class="form" placeholder="Please feel free to write a review..."></textarea><br><br>
+    <input id="submit" type="submit"  class="form">
+  </div>
+  </form>
+</div>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
